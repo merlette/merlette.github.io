@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import { t } from "i18next";
+
+interface TagCount {
+  tag: string;
+  count: number;
+}
+
+export async function getTagsWithCounts(): Promise<TagCount[]> {
+  const posts = await getCollection("blog");
+
+  const tagMap = new Map<string, number>();
+
+  posts.forEach((post) => {
+    const tags = post.data.tags || [];
+    tags.forEach((tag) => {
+      tagMap.set(tag, (tagMap.get(tag) || 0) + 1);
+    });
+  });
+
+  return Array.from(tagMap, ([tag, count]) => ({ tag, count }));
+}
+const tagsWithCounts = await getTagsWithCounts();
+---
+
+<div class="bg-base-100 shadow-xl w-full mb-8 no-card p-4 transition-colors">
+  <div class="px-4 mb-4">
+    <div class="btn btn-sm btn-ghost no-animation w-full font-bold">
+      {t("label.tagCard")}
+    </div>
+  </div>
+  <div class="flex flex-wrap gap-2.5 w-full max-h-[300px] overflow-auto">
+    {
+      tagsWithCounts.map(({ tag, count }) => (
+        <span class="join">
+          <a href={`/blog/tag/${tag}`} class="btn btn-xs join-item">
+            {tag}
+          </a>
+          <div class="btn btn-xs btn-secondary no-animation glass bg-secondary join-item">
+            {count}
+          </div>
+        </span>
+      ))
+    }
+  </div>
+</div>
