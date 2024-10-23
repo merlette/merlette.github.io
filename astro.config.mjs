@@ -22,7 +22,7 @@ const { USER_SITE } = await import('./src/consts.ts');
 // https://astro.build/config
 export default defineConfig({
   site: 'https://merlette.github.io',
-  output: '/my-repo',
+  output: 'static',
   style: {
     scss: {
       includePaths: ["./src/styles"],
