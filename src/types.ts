@@ -25,7 +25,7 @@ export interface Page {
   data: Post[];
   total: number;
   size: number;
-  current: string;
+  current: number;
 }
 
 export interface CardInfo {
@@ -38,6 +38,7 @@ export interface CardInfo {
   word?: string;
   time?: string;
   isBlog: boolean;
+  comment?: boolean;
   url?: string;
 }
 
@@ -53,4 +54,19 @@ export interface EnvelopeInfo {
   time?: string;
   isBlog: boolean;
   url: string;
+}
+export interface MenuItem {
+  id?: string;
+  text: string;
+  svg: string;
+  href?: string;
+  target?: string;
+  subItems?: MenuItem[];
+}
+
+export interface SocialIcon {
+  href: string;
+  svg: string;
+  ariaLabel: string;
+  title: string;
 }
