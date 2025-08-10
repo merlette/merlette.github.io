@@ -11,7 +11,9 @@ import ToolCard from "../components/ToolCard.astro";
 import TocCard from "../components/TocCard.astro";
 import { SITE_LANG, SITE_TAB, SITE_TITLE, SITE_DESCRIPTION, DAISYUI_THEME } from "../consts";
 import i18next, { changeLanguage } from "i18next";
+import { initI18n } from "../locales";
 
+initI18n();
 changeLanguage(SITE_LANG);
 
 interface Props {
