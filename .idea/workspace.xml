@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ec555a6-ec39-431e-8149-be86e6afeaa5" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/BaseLayout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/BaseLayout.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.mdx" afterDir="false" />
-    </list>
+    <list default="true" id="9ec555a6-ec39-431e-8149-be86e6afeaa5" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,6 +56,7 @@
       <workItem from="1753363789508" duration="6000" />
       <workItem from="1754106109129" duration="5000" />
       <workItem from="1754112290410" duration="2000" />
+      <workItem from="1755417644768" duration="48000" />
     </task>
     <servers />
   </component>
