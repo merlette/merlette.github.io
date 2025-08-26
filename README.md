@@ -12,7 +12,7 @@ Cloudflare Pages: [https://merlette.pages.dev](https://merlette.pages.dev/)
 - **Framework**: [Astro](https://astro.build/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) + [daisyUI](https://daisyui.com/)
 - **Icons**: [Iconify](https://iconify.design/)
-- **Deployment**: GitHub Pages/Cloudflare Pages
+- **Deployment**: Cloudflare Pages/GitHub Pages
 
 ## 📄 License
 
