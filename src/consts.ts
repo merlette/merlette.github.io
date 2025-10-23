@@ -3,18 +3,18 @@
 
 // Site title and description
 export const SITE_LANG = "en";
-export const SITE_TAB = "Merlette";
-export const SITE_TITLE = "Merlette";
+export const SITE_TAB = "MERLETTE";
+export const SITE_TITLE = "MERLETTE";
 export const SITE_DESCRIPTION = "A homepage hidden in the corners of the internet.";
 export const DATE_FORMAT = "ddd MMM DD YYYY";
 
 // User profile information
-export const USER_NAME = "Merlette";
-export const USER_SITE = "https://merlette.github.io"; // At the same time, this is also the site retrieved by the i18n configuration.
+export const USER_NAME = "MERLETTE";
+export const USER_SITE = "https://merlette.pages.dev"; // At the same time, this is also the site retrieved by the i18n configuration.
 export const USER_AVATAR = "/profile.webp";
 
 // Server and transition settings
-export const SERVER_URL = "https://merlette.github.io";
+export const SERVER_URL = "https://merlette.pages.dev";
 
 // Theme settings
 export const DAISYUI_THEME = {
@@ -45,12 +45,13 @@ export const menuItems = [
         target: "_self",
       }, // All blog
       {
-        id: "tech",
+        id: "guide",
         text: "Tech blogs",
-        href: "/blog/categories/tech",
+        href: "/blog/categories/guide",
         svg: "material-symbols:deployed-code-outline",
         target: "_self",
-      }, // Technology category
+      }, // Guide category
+      /*
       {
         id: "life",
         text: "Life blogs",
@@ -58,6 +59,7 @@ export const menuItems = [
         svg: "material-symbols:earthquake-rounded",
         target: "_self",
       }, // Life category
+      */
     ],
   }, // Blog page with sub-items
   {
@@ -94,7 +96,7 @@ export const socialIcons = [
     svg: "mingcute:github-line",
   },
   {
-    href: "https://space.bilibili.com/438392347",
+    href: "https://space.bilibili.com/519830795",
     ariaLabel: "BiliBili",
     title: "BiliBili",
     svg: "mingcute:bilibili-line",
