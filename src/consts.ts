@@ -62,6 +62,7 @@ export const menuItems = [
       */
     ],
   }, // Blog page with sub-items
+   /*
   {
     id: "project",
     text: "Project",
@@ -69,6 +70,7 @@ export const menuItems = [
     svg: "material-symbols:code-blocks-outline",
     target: "_self",
   }, // Projects page
+  */
   /*
   {
     id: "friend",
@@ -81,7 +83,7 @@ export const menuItems = [
   {
     id: "contact",
     text: "Contact",
-    href: "mailto:merlette@aliyun.com", // Contact email
+    href: "mailto:merlettte@icloud.com", // Contact email
     target: "_blank", // Open in a new tab
     svg: "material-symbols:attach-email-outline-rounded",
   },
